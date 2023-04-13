@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Employee management System</h1>
+    <table>
+        <tr>
+            <td colspan="2">ID</td>
+            <td colspan="2"><input type="text" name="txt_id" id="txt_id"></td>
+        </tr>
+        <tr>
+            <td colspan="2">Name</td>
+            <td colspan="2"><input type="text" name="txt_name" id="txt_name"></td>
+        </tr>
+        <tr>
+            <td colspan="2">Address</td>
+            <td colspan="2"><input type="text" name="txt_add" id="txt_add"></td>
+        </tr>
+        <tr>
+            <td colspan="2">Mobile</td>
+            <td colspan="2"><input type="text" name="txt_mob" id="txt_mob"></td>
+        </tr>
+        <tr>
+            <td><button onclick="btnAddClick()">Add</button></td>
+            <td><button onclick="btnSearchClick()">Search</button></td>
+            <td><button onclick="btnDeleteClick()">Delete</button></td>
+            <td><button onclick="btnModifyClick()">Modify</button></td>
+        </tr>
+        <tr>
+        <td><button onclick="">First</button></td>
+        <td><button onclick="">Pre</button></td>
+        <td><button onclick="">Next</button></td>
+        <td><button onclick="">Last</button></td>
+
+        </tr>
+        
+    </table>
+    <table id="tabCustomer">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+        </tr>
+
+    </table>
+</body>
+</html>
+<script src="./emp.js"></script>
+<!-- <script src="./index.js"></script> -->

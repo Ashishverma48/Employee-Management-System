@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    padding: 1rem;
+    
+}
+table{
+    width: 100%;
+}
+tr:nth-child(even){
+    background-color:rgb(164, 164, 164);
+}
+th{
+    background-color: rgb(5, 86, 5);
+    color: white;
+}
+td,th{
+    /* border: 1px solid red; */
+    padding: 8px;
+}
+input{
+    padding: 8px;
+    width: 100%;
+}
+button{
+    width: 100%;
+    padding: 8px;
+}
