@@ -19,10 +19,7 @@ function btnAddClick() {
   let mobileNo = txt_mobile.value;
   addCustomer(idNum, name, add, mobileNo);
   console.log(arr_custromer);
-  for (let i of arr_custromer) {
-    console.log(i);
-  }
-  console.log(arr_custromer);
+ 
 }
 function btnSearchClick() {
   let id = parseInt(txt_id.value);
@@ -55,7 +52,20 @@ function firstElement(){
     console.log(objCus);
 }
 function nextElement(){
-    var objCus = showCustomerByIndex(currentIndex+1)
+    if(currentIndex != arr_custromer.length-1){
+        currentIndex++
+    }
+    var objCus = showCustomerByIndex(currentIndex)
+    document.getElementById(`td_${objCus.id}`).style.backgroundColor = "red";
+    document.getElementById(`td_${objCus.id}`).style.color = "white";
+    console.log(currentIndex);
+}
+function prevElement(){
+    if(currentIndex !=0){
+        currentIndex--
+    }
+    console.log(currentIndex);
+    var objCus = showCustomerByIndex(currentIndex)
     document.getElementById(`td_${objCus.id}`).style.backgroundColor = "red";
     document.getElementById(`td_${objCus.id}`).style.color = "white";
 }
